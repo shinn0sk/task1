@@ -1,0 +1,10 @@
+
+= form_with model: task, local: true do |f|
+    .form-group
+        = f.label :name
+        = f.text_field :name, class: 'form-control', id: 'task_name'
+    .form-group
+        = f.label :body
+        = f.text_area :body, rows:5,class: 'form-control', id: 'task_body'
+
+    = f.submit '投稿' ,class: 'btn btn-primary'
